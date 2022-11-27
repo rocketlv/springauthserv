@@ -9,8 +9,8 @@ logging:
   level:
     root: INFO
     org.springframework.web: INFO
-    org.springframework.security: INFO
-    org.springframework.security.oauth2: INFO
+    org.springframework.security: DEBUG
+    org.springframework.security.oauth2: DEBUG
 #    org.springframework.boot.autoconfigure: DEBUG
 spring:
   datasource:
@@ -27,3 +27,8 @@ spring:
 rsa:
   private-key: classpath:certs/private.pem
   public-key: classpath:certs/public.pem
+auth-server:
+  clients:
+    -
+      name: rocketlv
+      secret: president
